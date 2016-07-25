@@ -11,6 +11,7 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/keys.css">
 		</script>
 	</head>
 	<body>
@@ -32,9 +33,11 @@
 					<section>
 						<h2>Emergency Guide</h2>
 						<ul>
-							<li class="fragment">:w <span class="fragment">=> write/save file</span></li>
-							<li class="fragment">:wq <span class="fragment">=> write/save file and quit</span></li>
-							<li class="fragment">:q! <span class="fragment">=> quit without saving</span></li>
+							<li class="fragment"><kbd class="light">:</kbd> <kbd class="light">w</kbd> <span class="fragment">=> write/save file</span></li>
+							<br />
+							<li class="fragment"><kbd class="light">:</kbd> <kbd class="light">w</kbd> <kbd class="light">q</kbd> <span class="fragment">=> write/save file and quit</span></li>
+							<br />
+							<li class="fragment"><kbd class="light">:</kbd> <kbd class="light">q</kbd> <kbd class="light">!</kbd> <span class="fragment">=> quit without saving</span></li>
 						</ul>
 					</section>
 				</section>
@@ -47,65 +50,79 @@
 					</section>
 					<section>
 						<h2>Insert</h2>
-						<p class="fragment">Press "i"</p>
+						<p class="fragment">Press <kbd class="light">i</kbd></p>
 						<p class="fragment">Normal Text Editor</p>
 					</section>
 					<section>
 						<h2>Visual</h2>
-						<p class="fragment">Press "v"</p>
+						<p class="fragment">Press <kbd class="light">v</kbd></p>
 						<p class="fragment">"Mouse" mode</p>
 					</section>
 					<section>
 						<h2>Command</h2>
-						<p class="fragment">Press "c"</p>
-						<p class="fragment">Menu and Other Options.</p> </section>
+						<p class="fragment">Press <kbd class="light">c</kbd></p>
+						<p class="fragment">Menu and Other Options</p></section>
 					</section>
 				</section>
 				<section>
-					<h2>Movements</h2>
-					<ul>
-						<li class="fragment">
-							<h3>Small step</h3>
-							<p>h, j, k, l</p>
-						</li>
-						<li class="fragment">
-							<h3>Big step</h3>
-							<p>h, j, k, l</p>
-						</li>
-						<li class="fragment">
-							<h3>Bigger step</h3>
-							<p>2w, 4e, 6b</p>
-						</li>
-					</ul>
+					<section>
+						<h2>Movements</h2>
+						<h3 class="fragment">Small step</h3>
+						<p class="fragment"><kbd class="light">h</kbd> => left</p>
+						<p class="fragment"><kbd class="light">j</kbd> => down</p>
+						<p class="fragment"><kbd class="light">k</kbd> => up</p>
+						<p class="fragment"><kbd class="light">l</kbd> => right</p>
+					</section>
+					<section>
+						<h2>Movements</h2>
+						<img src="./resources/keyboard.jpg" alt="hjkl keyboard" />
+					</section>
+					<section>
+						<h3>Big step</h3>
+						<p class="fragment"><kbd class="light">w</kbd> => beginning of next word</p>
+						<p class="fragment"><kbd class="light">e</kbd> => end of next word</p>
+						<p class="fragment"><kbd class="light">b</kbd> => beginning of previous word</p>
+					</section>
+					<section>
+						<h3>Bigger step</h3>
+						<p class="fragment"><kbd class="light">2</kbd>, <kbd class="light">w</kbd> => 2 words down</p>
+						<p class="fragment"><kbd class="light">4</kbd>, <kbd class="light">j</kbd> => 4 rows down</p>
+						<p class="fragment"><kbd class="light">10</kbd>, <kbd class="light">b</kbd> => 10 words back</p>
+					</section>
 				</section>
 				<section>
 					<section>
 						<h2>Actions</h2>
-						<p class="fragment">___ a word</p>
-						<ul>
-							<li class="fragment">daw</li>
-							<li class="fragment">caw</li>
-						</ul>
+						<h3 class="fragment">___ a word</h3>
+						<br />
+						<p class="fragment"><kbd class="light">d</kbd>, <kbd class="light">a</kbd>, <kbd class="light">w</kbd></p>
+						<p class="fragment">Delete A Word</p>
+						<br />
+						<p class="fragment"><kbd class="light">c</kbd>, <kbd class="light">a</kbd>, <kbd class="light">w</kbd></p>
+						<p class="fragment">Change A Word</p>
 					</section>
 					<section>
 						<p>___ ___ ___</p>
 						<ul>
-							<li class="fragment">da"</li>
-							<li class="fragment">di"</li>
-							<li class="fragment">dit</li>
+							<li class="fragment"><kbd class="light">d</kbd>, <kbd class="light">a</kbd>, <kbd class="light">"</kbd></li>
+							<br />
+							<li class="fragment"><kbd class="light">d</kbd>, <kbd class="light">i</kbd>, <kbd class="light">"</kbd></li>
+							<br />
+							<li class="fragment"><kbd class="light">d</kbd>, <kbd class="light">i</kbd>, <kbd class="light">t</kbd></li>
 						</ul>
 					</section>
 					<section>
 						<p>Add numbers</p>
 						<ul>
-							<li class="fragment">1, ctrl+a</li>
-							<li class="fragment">1, ctrl+x</li>
+							<li class="fragment"><kbd class="light">1</kbd>, <kbd class="light">ctrl</kbd> + <kbd class="light">a</kbd></li>
+							<br />
+							<li class="fragment"><kbd class="light">1</kbd>, <kbd class="light">ctrl</kbd> + <kbd class="light">x</kbd></li>
 						</ul>
 					</section>
 					<section>
 						<p>DRY</p>
 						<ul>
-							<li class="fragment">. (period)</li>
+							<li class="fragment"><kbd class="light">.</kbd> (period)</li>
 						</ul>
 					</section>
 				</section>
@@ -114,31 +131,43 @@
 						<h2>Registers</h2>
 						<p class="fragment">Bookmark</p>
 						<ul>
-							<li class="fragment">m + (letter) <span class="fragment">=> set bookmark</span></li>
-							<li class="fragment">' + (letter) <span class="fragment">=> go to bookmark</span></li>
+							<li class="fragment"><kbd class="light">m</kbd> + <kbd class="light">any</kbd> <span class="fragment">=> set bookmark</span></li>
+							<br />
+							<li class="fragment"><kbd class="light">'</kbd> + <kbd class="light">any</kbd> <span class="fragment">=> go to bookmark</span></li>
 						</ul>
 					</section>
 					<section>
 						<p>Yanking</p>
 						<ul>
-							<li class="fragment">" + (letter) + yy</li>
+							<li class="fragment">
+								<kbd class="light">"</kbd>, <kbd class="light">any</kbd>, <kbd class="light">y</kbd>, <kbd class="light">y</kbd>
+							</li>
 						</ul>
 					</section>
 					<section>
 						<p>Expression Register</p>
 						<ul>
-							<li class="fragment">ctrl + r, =</li>
+							<li class="fragment"><kbd class="light">ctrl</kbd> + <kbd class="light">r</kbd>, <kbd class="light">=</kbd></li>
+							<br />
 							<li class="fragment">Back of the envelope calculations</li>
-							<li class="fragment">:let i = 1</li>
+							<br />
+							<li class="fragment">
+								<pre><code data-trim data-noescape>
+									:let i = 1
+								</code></pre>
+							</li>
 						</ul>
 					</section>
 				</section>
 				<section>
 					<h2>Macros</h2>
 					<ul>
-						<li class="fragment">q + (letter) <span class="fragment">=> start recording</span></li>
-						<li class="fragment">@ + (letter) <span class="fragment">=> run macro</span></li>
+						<li class="fragment"><kbd class="light">q</kbd>, <kbd class="light">any</kbd> <span class="fragment">=> start recording</span></li>
+						<br />
+						<li class="fragment"><kbd class="light">@</kbd>, <kbd class="light">any</kbd> <span class="fragment">=> run macro</span></li>
+						<br />
 						<li class="fragment">Example: Create a list</li>
+						<br />
 						<li class="fragment">Example: Add class to HTML</li>
 					</ul>
 				</section>
@@ -170,7 +199,9 @@
 				</section>
 				<section>
 					<h2>Thank you</h2>
-					<p class="fragment">npm install anthonyng</p>
+					<pre class="fragment"><code data-trim data-noescape>
+						$ npm install anthonyng
+					</code></pre>
 				</section>
 			</div>
 		</div>

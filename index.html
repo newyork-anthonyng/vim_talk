@@ -18,20 +18,20 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2>Introduction</h2>
+					<h1>Introduction</h1>
 					<p class="fragment">Work</p>
 					<p class="fragment">Vim user</p>
 				</section>
 				<section>
 					<section>
-						<h2>What are we doing here?</h2>
+						<h1>What are we doing here?</h1>
 						<p class="fragment">How many people use Vim?</p>
 						<p class="fragment">Not a Vim tutorial</p>
 						<p class="fragment">Is Vim worth learning?</p>
 						<p class="fragment">Don't care at all?</p>
 					</section>
 					<section>
-						<h2>Emergency Guide</h2>
+						<h1>Emergency Guide</h1>
 						<ul>
 							<li class="fragment"><kbd class="light">:</kbd> <kbd class="light">w</kbd> <span class="fragment">=> write/save file</span></li>
 							<br />
@@ -43,30 +43,32 @@
 				</section>
 				<section>
 					<section>
-						<h2>Rethinking best practices</h2>
-						<p>Insert</p>
-						<p>Visual</p>
-						<p>Command</p>
+						<h1>Rethinking best practices</h1>
+						<div class="fragment">
+							<p>Insert</p>
+							<p>Visual</p>
+							<p>Command</p>
+						</div>
 					</section>
 					<section>
-						<h2>Insert</h2>
+						<h1>Insert</h1>
 						<p class="fragment">Press <kbd class="light">i</kbd></p>
 						<p class="fragment">Normal Text Editor</p>
 					</section>
 					<section>
-						<h2>Visual</h2>
+						<h1>Visual</h1>
 						<p class="fragment">Press <kbd class="light">v</kbd></p>
 						<p class="fragment">"Mouse" mode</p>
 					</section>
 					<section>
-						<h2>Command</h2>
+						<h1>Command</h1>
 						<p class="fragment">Press <kbd class="light">c</kbd></p>
 						<p class="fragment">Menu and Other Options</p></section>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h2>Movements</h2>
+						<h1>Movements</h1>
 						<h3 class="fragment">Small step</h3>
 						<p class="fragment"><kbd class="light">h</kbd> => left</p>
 						<p class="fragment"><kbd class="light">j</kbd> => down</p>
@@ -74,7 +76,6 @@
 						<p class="fragment"><kbd class="light">l</kbd> => right</p>
 					</section>
 					<section>
-						<h2>Movements</h2>
 						<img src="./resources/keyboard.jpg" alt="hjkl keyboard" />
 					</section>
 					<section>
@@ -85,14 +86,14 @@
 					</section>
 					<section>
 						<h3>Bigger step</h3>
-						<p class="fragment"><kbd class="light">2</kbd>, <kbd class="light">w</kbd> => 2 words down</p>
+						<p class="fragment"><kbd class="light">2</kbd>, <kbd class="light">w</kbd> => 2 words forward</p>
 						<p class="fragment"><kbd class="light">4</kbd>, <kbd class="light">j</kbd> => 4 rows down</p>
 						<p class="fragment"><kbd class="light">10</kbd>, <kbd class="light">b</kbd> => 10 words back</p>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h2>Actions</h2>
+						<h1>Actions</h1>
 						<h3 class="fragment">___ a word</h3>
 						<br />
 						<p class="fragment"><kbd class="light">d</kbd>, <kbd class="light">a</kbd>, <kbd class="light">w</kbd></p>
@@ -102,33 +103,35 @@
 						<p class="fragment">Change A Word</p>
 					</section>
 					<section>
-						<p>___ ___ ___</p>
-						<ul>
-							<li class="fragment"><kbd class="light">d</kbd>, <kbd class="light">a</kbd>, <kbd class="light">"</kbd></li>
-							<br />
-							<li class="fragment"><kbd class="light">d</kbd>, <kbd class="light">i</kbd>, <kbd class="light">"</kbd></li>
-							<br />
-							<li class="fragment"><kbd class="light">d</kbd>, <kbd class="light">i</kbd>, <kbd class="light">t</kbd></li>
+						<h3>___ ___ ___</h3>
+						<br />
+						<p class="fragment"><kbd class="light">d</kbd>, <kbd class="light">i</kbd>, <kbd class="light">"</kbd></p>
+						<p class="fragment">Delete text (i)nside double quotes</p>
+						<br />
+						<p class="fragment"><kbd class="light">d</kbd>, <kbd class="light">a</kbd>, <kbd class="light">"</kbd></p>
+						<p class="fragment">Delete text (a)round double quotes</p>
+						<br />
+						<p class="fragment"><kbd class="light">d</kbd>, <kbd class="light">i</kbd>, <kbd class="light">t</kbd></p>
+						<p class="fragment">Delete text inside HTML (t)ags</p>
+					</section>
+					<section>
+						<h3>Add numbers</h3>
+						<br />
+						<p class="fragment"><kbd class="light">1</kbd>, <kbd class="light">ctrl</kbd> + <kbd class="light">a</kbd></p>
+						<p class="fragment">Add 1 to the next number</p>
+						<br />
+						<p class="fragment"><kbd class="light">1</kbd>, <kbd class="light">ctrl</kbd> + <kbd class="light">x</kbd></p>
+						<p class="fragment">Subtract 1 from the next number</p>
 						</ul>
 					</section>
 					<section>
-						<p>Add numbers</p>
-						<ul>
-							<li class="fragment"><kbd class="light">1</kbd>, <kbd class="light">ctrl</kbd> + <kbd class="light">a</kbd></li>
-							<br />
-							<li class="fragment"><kbd class="light">1</kbd>, <kbd class="light">ctrl</kbd> + <kbd class="light">x</kbd></li>
-						</ul>
-					</section>
-					<section>
-						<p>DRY</p>
-						<ul>
-							<li class="fragment"><kbd class="light">.</kbd> (period)</li>
-						</ul>
+						<h3>DRY</h3>
+						<p class="fragment"><kbd class="light">.</kbd> (period)</p>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h2>Registers</h2>
+						<h1>Registers</h1>
 						<p class="fragment">Bookmark</p>
 						<ul>
 							<li class="fragment"><kbd class="light">m</kbd> + <kbd class="light">any</kbd> <span class="fragment">=> set bookmark</span></li>
@@ -137,30 +140,25 @@
 						</ul>
 					</section>
 					<section>
-						<p>Yanking</p>
-						<ul>
-							<li class="fragment">
+						<h1>Yanking</h1>
+							<p class="fragment">
 								<kbd class="light">"</kbd>, <kbd class="light">any</kbd>, <kbd class="light">y</kbd>, <kbd class="light">y</kbd>
-							</li>
-						</ul>
+							</p>
+							<p class="fragment">Copy line</p>
 					</section>
 					<section>
-						<p>Expression Register</p>
-						<ul>
-							<li class="fragment"><kbd class="light">ctrl</kbd> + <kbd class="light">r</kbd>, <kbd class="light">=</kbd></li>
-							<br />
-							<li class="fragment">Back of the envelope calculations</li>
-							<br />
-							<li class="fragment">
-								<pre><code data-trim data-noescape>
-									:let i = 1
-								</code></pre>
-							</li>
-						</ul>
+						<h1>Expression Register</h1>
+						<p class="fragment"><kbd class="light">ctrl</kbd> + <kbd class="light">r</kbd>, <kbd class="light">=</kbd></p>
+						<br />
+						<p class="fragment">Back of the envelope calculations</p>
+						<br />
+						<pre class="fragment"><code data-trim data-noescape>
+							:let i = 1
+						</code></pre>
 					</section>
 				</section>
 				<section>
-					<h2>Macros</h2>
+					<h1>Macros</h1>
 					<ul>
 						<li class="fragment"><kbd class="light">q</kbd>, <kbd class="light">any</kbd> <span class="fragment">=> start recording</span></li>
 						<br />
@@ -172,14 +170,14 @@
 					</ul>
 				</section>
 				<section>
-					<h2>~/.vimrc</h2>
+					<h1>~/.vimrc</h1>
 					<p class="fragment">Customization</p>
 					<p class="fragment">Pre-built Customizations <span class="fragment">:(</span></p>
-					<p class="fragment">Github</p>
+					<a href="https://raw.githubusercontent.com/newyork-anthonyng/favorites/master/vim_settings.md" class="fragment">Github</a>
 				</section>
 				<section>
 					<section>
-						<h2>Resources</h2>
+						<h1>Resources</h1>
 						<p class="fragment">vimtutor</p>
 					</section>
 					<section>

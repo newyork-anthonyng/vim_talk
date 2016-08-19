@@ -1,4 +1,4 @@
-He said, "dang gurl."
+The quick brown fox jumps over the lazy dog
 
 <h1>Hey gurl</h1>
 
@@ -7,7 +7,7 @@ h1 {
 }
 
 <h1>Hey gurl</h1>
-<h1>Hey gurl</h1>
+		<p>Hey gurl</p>
 <h1>Hey gurl</h1>
 
 1.
